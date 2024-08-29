@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashfeed</title>
+    <link rel="icon" href="favicon.jpg" type="image/jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav>
+
+    <div class="main-nav container flex">
+      
+            <a href="#" onclick="reload()">
+                <h4>HOME</h4>
+            </a>
+       
+        <div class="nav-links">
+            <ul class="flex">
+                <li class="hover-link nav-item"id="technical" onclick="onNavitemclick('technical')">Technical</li>
+                <li class="hover-link nav-item"id="sports" onclick="onNavitemclick('sports')">Sports</li>
+                <li class="hover-link nav-item" id="Business" onclick="onNavitemclick('Business')">Business</li>
+            </ul>
+        </div>
+        
+        <div class="search-bar flex">
+            <input type="text" id='search-text' class="news-input" placeholder="e.g science">
+            <button id='search-button' class="search-button">Search</button>
+        </div>
+
+    </div>
+
+    </nav>
+
+    <main >
+        <div class="cards-container container flex" id="cards-container">
+           
+        </div>
+
+        
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="paris.jpg" alt="card-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore soluta voluptatem fuga ut nam at alias corporis accusamus eligendi?</p>
+            </div>
+        </div>
+    </template>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
